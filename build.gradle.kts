@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "ru.landgrafhomyak.collections"
-version = "1.0@arbt-1.1"
+version = "1.0"
 
 repositories {
     mavenCentral()
