@@ -24,6 +24,7 @@ abstract class AbstractRedBlackPriorityQueue<NODE : Any> {
     protected abstract fun _getColor(node: NODE): AbstractRedBlackTree.Color
     protected abstract fun _setColor(node: NODE, color: AbstractRedBlackTree.Color)
     protected abstract fun _hasHigherPriority(node: NODE, than: NODE): Boolean
+    protected open fun _checkSame(leftNode: NODE, rightNode: NODE?) = leftNode === rightNode
 
     inner class RedBlackTreeSubst : AbstractRedBlackTree<NODE>() {
         override fun _getColor(node: NODE): Color =
@@ -49,6 +50,9 @@ abstract class AbstractRedBlackPriorityQueue<NODE : Any> {
 
         override fun _setRightChild(node: NODE, child: NODE?) =
             this@AbstractRedBlackPriorityQueue._setRightChild(node, child)
+
+        override fun _checkSame(leftNode: NODE, rightNode: NODE?): Boolean =
+            this@AbstractRedBlackPriorityQueue._checkSame(leftNode, rightNode)
     }
 
 
@@ -61,9 +65,13 @@ abstract class AbstractRedBlackPriorityQueue<NODE : Any> {
     val maxPriorityNodeOrThrow: NODE
         get() = this._maxPriorityNode ?: throw NoSuchElementException("Priority queue is empty")
 
+    /**
+     * Root of the binary search tree used to implement this priority queue.
+     * Right child have higher priority, left child have same or lower priority.
+     */
     val bstRoot by this.treeImpl::root
 
-    fun add(node: NODE) {
+    fun link(node: NODE) {
         val root = this.treeImpl.root
         if (root == null) {
             this.treeImpl.root = node
@@ -81,6 +89,8 @@ abstract class AbstractRedBlackPriorityQueue<NODE : Any> {
                     continue
                 }
                 this._setRightChild(p, node)
+                if (this._checkSame(p, this._maxPriorityNode))
+                    this._maxPriorityNode = node
             } else {
                 val newP = this._getLeftChild(p)
                 if (newP != null) {
@@ -93,20 +103,18 @@ abstract class AbstractRedBlackPriorityQueue<NODE : Any> {
             this.treeImpl.balanceAfterLinking(node)
             break
         }
-
-        this._maxPriorityNode = this.treeImpl.maxOrThrow() // todo
     }
 
     @PublishedApi
-    internal fun __popMaxPriorityNode(node: NODE): NODE {
+    internal fun __unlinkMaxPriorityNode(node: NODE): NODE {
+        this._maxPriorityNode = this._getParent(node)
         this.treeImpl.unlink(node)
-        this._maxPriorityNode = this.treeImpl.maxOrThrow() // todo
         return node
     }
 
-    fun popMaxPriorityNodeOrThrow(): NODE = this.__popMaxPriorityNode(this.maxPriorityNodeOrThrow)
-    fun popMaxPriorityNodeOrNull(): NODE? {
-        return this.__popMaxPriorityNode(this._maxPriorityNode ?: return null)
+    fun unlinkMaxPriorityNodeOrThrow(): NODE = this.__unlinkMaxPriorityNode(this.maxPriorityNodeOrThrow)
+    fun unlinkMaxPriorityNodeOrNull(): NODE? {
+        return this.__unlinkMaxPriorityNode(this._maxPriorityNode ?: return null)
     }
 
     /**
@@ -120,13 +128,13 @@ abstract class AbstractRedBlackPriorityQueue<NODE : Any> {
      * and ***[predicate] returned `true`***, otherwise `null`.
      */
     @OptIn(ExperimentalContracts::class)
-    inline fun conditionalPopMaxPriorityNode(predicate: (NODE) -> Boolean): NODE? {
+    inline fun conditionalUnlinkMaxPriorityNode(predicate: (NODE) -> Boolean): NODE? {
         contract {
             callsInPlace(predicate, InvocationKind.AT_MOST_ONCE)
         }
         val node = this.maxPriorityNodeOrNull ?: return null
         if (predicate(node))
-            this.__popMaxPriorityNode(node)
+            this.__unlinkMaxPriorityNode(node)
         return node
     }
 
