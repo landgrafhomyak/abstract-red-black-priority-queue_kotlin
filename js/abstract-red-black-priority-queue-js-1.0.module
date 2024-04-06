@@ -1,0 +1,141 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../abstract-red-black-priority-queue/1.0/abstract-red-black-priority-queue-1.0.module",
+    "group": "ru.landgrafhomyak.collections",
+    "module": "abstract-red-black-priority-queue",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.7"
+    }
+  },
+  "variants": [
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-js",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-tree",
+          "version": {
+            "requires": "1.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "abstract-red-black-priority-queue-js-1.0.klib",
+          "url": "abstract-red-black-priority-queue-js-1.0.klib",
+          "size": 11185,
+          "sha512": "f80c2c20d6ebc9c232236c7c163b8949ffc354f2fe547686728235b93e735d385f024a300ab1ffb64adb2df64266706f9b8410e746e62f4fb90dcd55b785b8db",
+          "sha256": "db78f79a73ac962e6be878c28d5081b9c6e953908e9aee444b5d317c02138135",
+          "sha1": "89975276c770e222e20931d77897c69adee4a92f",
+          "md5": "073209809de2e9660ae1df1cbce41305"
+        }
+      ]
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-js",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-tree",
+          "version": {
+            "requires": "1.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "abstract-red-black-priority-queue-js-1.0.klib",
+          "url": "abstract-red-black-priority-queue-js-1.0.klib",
+          "size": 11185,
+          "sha512": "f80c2c20d6ebc9c232236c7c163b8949ffc354f2fe547686728235b93e735d385f024a300ab1ffb64adb2df64266706f9b8410e746e62f4fb90dcd55b785b8db",
+          "sha256": "db78f79a73ac962e6be878c28d5081b9c6e953908e9aee444b5d317c02138135",
+          "sha1": "89975276c770e222e20931d77897c69adee4a92f",
+          "md5": "073209809de2e9660ae1df1cbce41305"
+        }
+      ]
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "files": [
+        {
+          "name": "abstract-red-black-priority-queue-js-1.0-sources.jar",
+          "url": "abstract-red-black-priority-queue-js-1.0-sources.jar",
+          "size": 2386,
+          "sha512": "bf8eacd8269746ec6ae1a687f4921866ab7e60738d93bbd42343b091b02cea8b876cfc0def39265fa51964a892fd1d47ae11d07a9d10116c60baeb667fd948f4",
+          "sha256": "f08bfd49ad8448dcd8b4e4d4eb30507be68b85370301794c305e1953f6b3755e",
+          "sha1": "baed2e53dc52e001f9d48c5ee65759cbb09f5624",
+          "md5": "e6cec4710f91cdc20677c3cda9c1d5b3"
+        }
+      ]
+    }
+  ]
+}

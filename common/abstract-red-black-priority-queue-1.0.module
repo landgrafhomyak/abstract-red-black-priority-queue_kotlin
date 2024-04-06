@@ -1,0 +1,889 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "ru.landgrafhomyak.collections",
+    "module": "abstract-red-black-priority-queue",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.7"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-tree",
+          "version": {
+            "requires": "1.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "abstract-red-black-priority-queue-metadata-1.0.jar",
+          "url": "abstract-red-black-priority-queue-1.0.jar",
+          "size": 4309,
+          "sha512": "faf994eb4f27c506aeea575d7184b48add43d2763d7a6e9ca405ff61d778e06807405b0c3f910cb98603b46045cb6a04c981126038c297d8a1945f1d7bdf4386",
+          "sha256": "c67e9569e95153ad480f2191fda217a722b6a34f5ab1459cd1873da34441c020",
+          "sha1": "bc2da8e85667cbe68e976d6a9e138180b8c55f89",
+          "md5": "02e4b7c3e3e869614db0df405966a5af"
+        }
+      ]
+    },
+    {
+      "name": "metadataSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "files": [
+        {
+          "name": "abstract-red-black-priority-queue-kotlin-1.0-sources.jar",
+          "url": "abstract-red-black-priority-queue-1.0-sources.jar",
+          "size": 2386,
+          "sha512": "bf8eacd8269746ec6ae1a687f4921866ab7e60738d93bbd42343b091b02cea8b876cfc0def39265fa51964a892fd1d47ae11d07a9d10116c60baeb667fd948f4",
+          "sha256": "f08bfd49ad8448dcd8b4e4d4eb30507be68b85370301794c305e1953f6b3755e",
+          "sha1": "baed2e53dc52e001f9d48c5ee65759cbb09f5624",
+          "md5": "e6cec4710f91cdc20677c3cda9c1d5b3"
+        }
+      ]
+    },
+    {
+      "name": "androidNativeArm32ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "android_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-androidnativearm32/1.0/abstract-red-black-priority-queue-androidnativearm32-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-androidnativearm32",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "androidNativeArm32SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "android_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-androidnativearm32/1.0/abstract-red-black-priority-queue-androidnativearm32-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-androidnativearm32",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "androidNativeArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "android_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-androidnativearm64/1.0/abstract-red-black-priority-queue-androidnativearm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-androidnativearm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "androidNativeArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "android_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-androidnativearm64/1.0/abstract-red-black-priority-queue-androidnativearm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-androidnativearm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "androidNativeX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "android_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-androidnativex64/1.0/abstract-red-black-priority-queue-androidnativex64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-androidnativex64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "androidNativeX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "android_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-androidnativex64/1.0/abstract-red-black-priority-queue-androidnativex64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-androidnativex64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "androidNativeX86ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "android_x86",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-androidnativex86/1.0/abstract-red-black-priority-queue-androidnativex86-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-androidnativex86",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "androidNativeX86SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "android_x86",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-androidnativex86/1.0/abstract-red-black-priority-queue-androidnativex86-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-androidnativex86",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-iosarm64/1.0/abstract-red-black-priority-queue-iosarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-iosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "iosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-iosarm64/1.0/abstract-red-black-priority-queue-iosarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-iosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-iosarm64/1.0/abstract-red-black-priority-queue-iosarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-iosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-iossimulatorarm64/1.0/abstract-red-black-priority-queue-iossimulatorarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-iossimulatorarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-iossimulatorarm64/1.0/abstract-red-black-priority-queue-iossimulatorarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-iossimulatorarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-iossimulatorarm64/1.0/abstract-red-black-priority-queue-iossimulatorarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-iossimulatorarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "iosX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-iosx64/1.0/abstract-red-black-priority-queue-iosx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-iosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "iosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-iosx64/1.0/abstract-red-black-priority-queue-iosx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-iosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "iosX64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-iosx64/1.0/abstract-red-black-priority-queue-iosx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-iosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-js/1.0/abstract-red-black-priority-queue-js-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-js",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-js/1.0/abstract-red-black-priority-queue-js-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-js",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-js/1.0/abstract-red-black-priority-queue-js-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-js",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-jvm/1.0/abstract-red-black-priority-queue-jvm-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-jvm",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-jvm/1.0/abstract-red-black-priority-queue-jvm-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-jvm",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-jvm/1.0/abstract-red-black-priority-queue-jvm-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-jvm",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "linuxArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "linux_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-linuxarm64/1.0/abstract-red-black-priority-queue-linuxarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-linuxarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "linuxArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "linux_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-linuxarm64/1.0/abstract-red-black-priority-queue-linuxarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-linuxarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "linuxX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "linux_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-linuxx64/1.0/abstract-red-black-priority-queue-linuxx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-linuxx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "linuxX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "linux_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-linuxx64/1.0/abstract-red-black-priority-queue-linuxx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-linuxx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "macosArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-macosarm64/1.0/abstract-red-black-priority-queue-macosarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-macosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "macosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-macosarm64/1.0/abstract-red-black-priority-queue-macosarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-macosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "macosArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-macosarm64/1.0/abstract-red-black-priority-queue-macosarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-macosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "macosX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "macos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-macosx64/1.0/abstract-red-black-priority-queue-macosx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-macosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "macosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "macos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-macosx64/1.0/abstract-red-black-priority-queue-macosx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-macosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "macosX64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "macos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-macosx64/1.0/abstract-red-black-priority-queue-macosx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-macosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "mingwX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "mingw_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-mingwx64/1.0/abstract-red-black-priority-queue-mingwx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-mingwx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "mingwX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "mingw_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-mingwx64/1.0/abstract-red-black-priority-queue-mingwx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-mingwx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "tvosArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "tvos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-tvosarm64/1.0/abstract-red-black-priority-queue-tvosarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-tvosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "tvosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "tvos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-tvosarm64/1.0/abstract-red-black-priority-queue-tvosarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-tvosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "tvosArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "tvos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-tvosarm64/1.0/abstract-red-black-priority-queue-tvosarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-tvosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "tvosX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "tvos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-tvosx64/1.0/abstract-red-black-priority-queue-tvosx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-tvosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "tvosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "tvos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-tvosx64/1.0/abstract-red-black-priority-queue-tvosx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-tvosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "tvosX64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "tvos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-tvosx64/1.0/abstract-red-black-priority-queue-tvosx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-tvosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "watchosArm32ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-watchosarm32/1.0/abstract-red-black-priority-queue-watchosarm32-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-watchosarm32",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "watchosArm32SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-watchosarm32/1.0/abstract-red-black-priority-queue-watchosarm32-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-watchosarm32",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "watchosArm32MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-watchosarm32/1.0/abstract-red-black-priority-queue-watchosarm32-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-watchosarm32",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "watchosArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-watchosarm64/1.0/abstract-red-black-priority-queue-watchosarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-watchosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "watchosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-watchosarm64/1.0/abstract-red-black-priority-queue-watchosarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-watchosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "watchosArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-watchosarm64/1.0/abstract-red-black-priority-queue-watchosarm64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-watchosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "watchosX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-watchosx64/1.0/abstract-red-black-priority-queue-watchosx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-watchosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "watchosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-watchosx64/1.0/abstract-red-black-priority-queue-watchosx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-watchosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "watchosX64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-red-black-priority-queue-watchosx64/1.0/abstract-red-black-priority-queue-watchosx64-1.0.module",
+        "group": "ru.landgrafhomyak.collections",
+        "module": "abstract-red-black-priority-queue-watchosx64",
+        "version": "1.0"
+      }
+    }
+  ]
+}

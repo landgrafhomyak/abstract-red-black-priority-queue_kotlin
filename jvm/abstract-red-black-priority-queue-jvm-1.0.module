@@ -1,0 +1,127 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../abstract-red-black-priority-queue/1.0/abstract-red-black-priority-queue-1.0.module",
+    "group": "ru.landgrafhomyak.collections",
+    "module": "abstract-red-black-priority-queue",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.7"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-tree",
+          "version": {
+            "requires": "1.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "abstract-red-black-priority-queue-jvm-1.0.jar",
+          "url": "abstract-red-black-priority-queue-jvm-1.0.jar",
+          "size": 5618,
+          "sha512": "5a1960bf7a46902b969c4c460c9fd32b0a9f7e4d43e58e6055e38627011919ebca094478c8b267add80fe511a7f363ab4f18be0edb9191cf1c6b1489174fb95b",
+          "sha256": "bf5dc008221fa3183973817e27bf283c83ca2bb93af44cea479369d39e65e735",
+          "sha1": "95f3733f43e54da722d5f69c634c28001348014a",
+          "md5": "028798e308b30cc8d0bb3d4aad9c8635"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-tree",
+          "version": {
+            "requires": "1.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "abstract-red-black-priority-queue-jvm-1.0.jar",
+          "url": "abstract-red-black-priority-queue-jvm-1.0.jar",
+          "size": 5618,
+          "sha512": "5a1960bf7a46902b969c4c460c9fd32b0a9f7e4d43e58e6055e38627011919ebca094478c8b267add80fe511a7f363ab4f18be0edb9191cf1c6b1489174fb95b",
+          "sha256": "bf5dc008221fa3183973817e27bf283c83ca2bb93af44cea479369d39e65e735",
+          "sha1": "95f3733f43e54da722d5f69c634c28001348014a",
+          "md5": "028798e308b30cc8d0bb3d4aad9c8635"
+        }
+      ]
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "abstract-red-black-priority-queue-jvm-1.0-sources.jar",
+          "url": "abstract-red-black-priority-queue-jvm-1.0-sources.jar",
+          "size": 2386,
+          "sha512": "bf8eacd8269746ec6ae1a687f4921866ab7e60738d93bbd42343b091b02cea8b876cfc0def39265fa51964a892fd1d47ae11d07a9d10116c60baeb667fd948f4",
+          "sha256": "f08bfd49ad8448dcd8b4e4d4eb30507be68b85370301794c305e1953f6b3755e",
+          "sha1": "baed2e53dc52e001f9d48c5ee65759cbb09f5624",
+          "md5": "e6cec4710f91cdc20677c3cda9c1d5b3"
+        }
+      ]
+    }
+  ]
+}

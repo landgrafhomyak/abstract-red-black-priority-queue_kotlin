@@ -1,0 +1,115 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../abstract-red-black-priority-queue/1.0/abstract-red-black-priority-queue-1.0.module",
+    "group": "ru.landgrafhomyak.collections",
+    "module": "abstract-red-black-priority-queue",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.7"
+    }
+  },
+  "variants": [
+    {
+      "name": "macosX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "macos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-tree",
+          "version": {
+            "requires": "1.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "abstract-red-black-priority-queue.klib",
+          "url": "abstract-red-black-priority-queue-macosx64-1.0.klib",
+          "size": 13431,
+          "sha512": "c9b192ad357fb6a8996a8922aee4074bccc0fc3de8c09620ba38254021819196d5f724d127ea47ff1741be81add02e5c0b82f6f0e38608bd2be266f6ff69417d",
+          "sha256": "6fd40fecebc0ac28fa57e557eb6ea19fd45a2a1ff484d6f38cfe46568cc57b33",
+          "sha1": "8404b5af777745b3e772817732685bed49f1fd30",
+          "md5": "f74d46ef2e4c9cfa8a2c36ad7297338f"
+        }
+      ]
+    },
+    {
+      "name": "macosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "macos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "abstract-red-black-priority-queue-macosx64-1.0-sources.jar",
+          "url": "abstract-red-black-priority-queue-macosx64-1.0-sources.jar",
+          "size": 2386,
+          "sha512": "bf8eacd8269746ec6ae1a687f4921866ab7e60738d93bbd42343b091b02cea8b876cfc0def39265fa51964a892fd1d47ae11d07a9d10116c60baeb667fd948f4",
+          "sha256": "f08bfd49ad8448dcd8b4e4d4eb30507be68b85370301794c305e1953f6b3755e",
+          "sha1": "baed2e53dc52e001f9d48c5ee65759cbb09f5624",
+          "md5": "e6cec4710f91cdc20677c3cda9c1d5b3"
+        }
+      ]
+    },
+    {
+      "name": "macosX64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "macos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-tree",
+          "version": {
+            "requires": "1.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "abstract-red-black-priority-queue-macosx64-1.0-metadata.jar",
+          "url": "abstract-red-black-priority-queue-macosx64-1.0-metadata.jar",
+          "size": 261,
+          "sha512": "230c6b14bfa95becad9533dcdd3784696159d8ccb2006bc1329e11e9fe110cbc208d609c5bba1fcb7aecc2b520afb9f046dc22dd8bbac3ea5fc628f29f581eb3",
+          "sha256": "b8784ca47657ae0398aab79614e7b701d8abf365cc527d01520e34df4485f431",
+          "sha1": "2bdfdf3a2d62180c35536651ba9bf78bedf4e705",
+          "md5": "f210d4952812b2af982033472cc68d72"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../abstract-red-black-priority-queue/1.0/abstract-red-black-priority-queue-1.0.module",
+    "group": "ru.landgrafhomyak.collections",
+    "module": "abstract-red-black-priority-queue",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.7"
+    }
+  },
+  "variants": [
+    {
+      "name": "macosArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-tree",
+          "version": {
+            "requires": "1.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "abstract-red-black-priority-queue.klib",
+          "url": "abstract-red-black-priority-queue-macosarm64-1.0.klib",
+          "size": 13447,
+          "sha512": "8def3719b00d78a4951736cc7751c118df27165cec7f8aa546d8fc5e982fcab0198533adf39bdeba8197a8ecd4d28b266bde310ecd6774688ca39b6237d4fe24",
+          "sha256": "2f47deeaab159e5190f079695cb4f4ce85c922cc86b2a89ec4a457bbeee50dd1",
+          "sha1": "60871da1f162a638e288a19be1217d69e0946208",
+          "md5": "5e6678e1aab6c330083f3b3933b6fc99"
+        }
+      ]
+    },
+    {
+      "name": "macosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "abstract-red-black-priority-queue-macosarm64-1.0-sources.jar",
+          "url": "abstract-red-black-priority-queue-macosarm64-1.0-sources.jar",
+          "size": 2386,
+          "sha512": "bf8eacd8269746ec6ae1a687f4921866ab7e60738d93bbd42343b091b02cea8b876cfc0def39265fa51964a892fd1d47ae11d07a9d10116c60baeb667fd948f4",
+          "sha256": "f08bfd49ad8448dcd8b4e4d4eb30507be68b85370301794c305e1953f6b3755e",
+          "sha1": "baed2e53dc52e001f9d48c5ee65759cbb09f5624",
+          "md5": "e6cec4710f91cdc20677c3cda9c1d5b3"
+        }
+      ]
+    },
+    {
+      "name": "macosArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-tree",
+          "version": {
+            "requires": "1.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "abstract-red-black-priority-queue-macosarm64-1.0-metadata.jar",
+          "url": "abstract-red-black-priority-queue-macosarm64-1.0-metadata.jar",
+          "size": 261,
+          "sha512": "04920a2e821f7c15bffb22f8143d09bce131de4b2c98931ccf4a8bc2acf8615fd519d3cf5b63d08593878f8d5968da59cfdd8eb583bc0401399ed69b59f05c66",
+          "sha256": "1dd07797c5b9c12d5ff34529e93ea440fcf66c5dbc0fc2722abfb147818f05ff",
+          "sha1": "6d7b7e2cfabb7da3c1335c4e74533c9c1e9589c8",
+          "md5": "19b7fcff0d20394427e5ae092dabe27d"
+        }
+      ]
+    }
+  ]
+}
