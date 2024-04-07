@@ -26,7 +26,7 @@ abstract class AbstractRedBlackPriorityQueue<NODE : Any> {
     protected abstract fun _hasHigherPriority(node: NODE, than: NODE): Boolean
     protected open fun _checkSame(leftNode: NODE, rightNode: NODE?) = leftNode === rightNode
 
-    inner class RedBlackTreeSubst : AbstractRedBlackTree<NODE>() {
+    private inner class RedBlackTreeSubst : AbstractRedBlackTree<NODE>() {
         override fun _getColor(node: NODE): Color =
             this@AbstractRedBlackPriorityQueue._getColor(node)
 
@@ -141,4 +141,8 @@ abstract class AbstractRedBlackPriorityQueue<NODE : Any> {
     fun isEmpty(): Boolean = this._maxPriorityNode == null
 
     fun isNotEmpty(): Boolean = this._maxPriorityNode != null
+
+    fun clear() {
+        this.treeImpl.root = null
+    }
 }
