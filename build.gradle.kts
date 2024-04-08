@@ -43,7 +43,7 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                api("ru.landgrafhomyak.collections:abstract-red-black-tree:1.1")
+                api("ru.landgrafhomyak.collections:abstract-red-black-tree:1.2")
             }
         }
         val commonTest by getting {
