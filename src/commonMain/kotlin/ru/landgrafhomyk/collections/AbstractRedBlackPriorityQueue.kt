@@ -191,4 +191,10 @@ abstract class AbstractRedBlackPriorityQueue<NODE : Any> {
     fun isNotEmpty(): Boolean = this._maxPriorityNode != null
 
     fun clear() = this.treeImpl.clear()
+
+    fun unlink(node: NODE) {
+        if (this._checkSame(node, this._maxPriorityNode))
+            this._maxPriorityNode = this._getParent(node)
+        this.treeImpl.unlink(node)
+    }
 }
