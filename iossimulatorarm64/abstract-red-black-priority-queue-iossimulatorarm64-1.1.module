@@ -1,0 +1,115 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../abstract-red-black-priority-queue/1.1/abstract-red-black-priority-queue-1.1.module",
+    "group": "ru.landgrafhomyak.collections",
+    "module": "abstract-red-black-priority-queue",
+    "version": "1.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.7"
+    }
+  },
+  "variants": [
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-tree",
+          "version": {
+            "requires": "1.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "abstract-red-black-priority-queue.klib",
+          "url": "abstract-red-black-priority-queue-iossimulatorarm64-1.1.klib",
+          "size": 15058,
+          "sha512": "63531526d2be4ff42cc0e9f7cc8fa324311ffa558999fdee41ca1fec6dc4ff2235f1439b5ee3daa5f564c10185bc86030a9e02f6ea18708108d7e5eb66edd8aa",
+          "sha256": "68286e0c536ad45ccc679fe231dcf3b7337547506ee35952d110c2aa5a29f8d4",
+          "sha1": "309e9c8f9450366f25d86b67b551e1d70c775194",
+          "md5": "3c03579259c1129f84f69bc61bac61fc"
+        }
+      ]
+    },
+    {
+      "name": "iosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "abstract-red-black-priority-queue-iossimulatorarm64-1.1-sources.jar",
+          "url": "abstract-red-black-priority-queue-iossimulatorarm64-1.1-sources.jar",
+          "size": 2684,
+          "sha512": "9295885cf78a625a118399347e8c739de0f5deaea4d82acea690cdb1752a6a70bc344f72f0f098f68831bc09c8941f428390621abfb6a9d108048eb95f74452b",
+          "sha256": "31440029b58b89417ec68ea8046cc01e65c2b17e29ed7a645a62f0c57531ee91",
+          "sha1": "751f0b2471becf15e9b13040b4a9e491128e8aaa",
+          "md5": "4b55e277a7751ec73c43f5575edf8c14"
+        }
+      ]
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-tree",
+          "version": {
+            "requires": "1.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "abstract-red-black-priority-queue-iossimulatorarm64-1.1-metadata.jar",
+          "url": "abstract-red-black-priority-queue-iossimulatorarm64-1.1-metadata.jar",
+          "size": 261,
+          "sha512": "25977f54a33c771fceedd4845bdad0e25b2fb87cccd2f98ba1c2c21a7f4bed411eef9e9b161e22e94eb962a099d757ee41c14bfadb8701255dfc349d46bd1856",
+          "sha256": "4a7f3a689649429a3b9890253db273a842859489f3fd8575a9b2149e0e9509fb",
+          "sha1": "ccfa12ba071fe79814bab2b73e511159054272f1",
+          "md5": "3857158599967b33c23c09edac1248cb"
+        }
+      ]
+    }
+  ]
+}

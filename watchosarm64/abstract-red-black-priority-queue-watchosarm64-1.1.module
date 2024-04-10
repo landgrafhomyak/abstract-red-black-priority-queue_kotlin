@@ -1,0 +1,115 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../abstract-red-black-priority-queue/1.1/abstract-red-black-priority-queue-1.1.module",
+    "group": "ru.landgrafhomyak.collections",
+    "module": "abstract-red-black-priority-queue",
+    "version": "1.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.7"
+    }
+  },
+  "variants": [
+    {
+      "name": "watchosArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-tree",
+          "version": {
+            "requires": "1.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "abstract-red-black-priority-queue.klib",
+          "url": "abstract-red-black-priority-queue-watchosarm64-1.1.klib",
+          "size": 15007,
+          "sha512": "d4b05b496edce7f0ea1a1547422f16bbb24bf71cb256b579b8a2da686f802ed642ea9ac62fda7daa6590d30c7444b2d775c46de0f1ca216387161025b486bf73",
+          "sha256": "ba0999eaf7bc842c28a79e33bf83a977e08d204e85bd4771951fb2a925a373a5",
+          "sha1": "3e27df6a32db2b40b3149866bc1cd356129066ff",
+          "md5": "dd06c900d8ebaac1b44c3cbb56fea5e3"
+        }
+      ]
+    },
+    {
+      "name": "watchosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "abstract-red-black-priority-queue-watchosarm64-1.1-sources.jar",
+          "url": "abstract-red-black-priority-queue-watchosarm64-1.1-sources.jar",
+          "size": 2684,
+          "sha512": "9295885cf78a625a118399347e8c739de0f5deaea4d82acea690cdb1752a6a70bc344f72f0f098f68831bc09c8941f428390621abfb6a9d108048eb95f74452b",
+          "sha256": "31440029b58b89417ec68ea8046cc01e65c2b17e29ed7a645a62f0c57531ee91",
+          "sha1": "751f0b2471becf15e9b13040b4a9e491128e8aaa",
+          "md5": "4b55e277a7751ec73c43f5575edf8c14"
+        }
+      ]
+    },
+    {
+      "name": "watchosArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-tree",
+          "version": {
+            "requires": "1.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "abstract-red-black-priority-queue-watchosarm64-1.1-metadata.jar",
+          "url": "abstract-red-black-priority-queue-watchosarm64-1.1-metadata.jar",
+          "size": 261,
+          "sha512": "9b7e12b66c6330496d7f97768d323cfcf67e6aeb7509bdb697e19ae8ac0f9812bf3d1d381fa25aab628b6140a95da580131b776121b5c117cbb0e74dd93080dd",
+          "sha256": "001013510c1e874429370c0d10612b9a115c20d761a4d2297f1506688dd1f74f",
+          "sha1": "073ed2a80f1c0eaa89f4612f27a9c1bb6f271b28",
+          "md5": "34fd29912461ac8575ba5ffbc52de8ff"
+        }
+      ]
+    }
+  ]
+}

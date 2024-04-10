@@ -1,0 +1,78 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../abstract-red-black-priority-queue/1.1/abstract-red-black-priority-queue-1.1.module",
+    "group": "ru.landgrafhomyak.collections",
+    "module": "abstract-red-black-priority-queue",
+    "version": "1.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.7"
+    }
+  },
+  "variants": [
+    {
+      "name": "mingwX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "mingw_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-tree",
+          "version": {
+            "requires": "1.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "abstract-red-black-priority-queue.klib",
+          "url": "abstract-red-black-priority-queue-mingwx64-1.1.klib",
+          "size": 14973,
+          "sha512": "2115a7e9ba1a98258bc128ce8396a1888241e1cdc36e397271f106d2f413adc983f97f512d41b4d2671695c5c50429bc1b505290a2ad9b2a2043c457aeb60622",
+          "sha256": "2a89efe9f0bfc57ff95f768b3183a06479dd9beb748eb83994354d83234ae26e",
+          "sha1": "345629e0b73d5dad891d1f7b352664ca6c699096",
+          "md5": "8aad6732803c4ba8475624508bba6914"
+        }
+      ]
+    },
+    {
+      "name": "mingwX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "mingw_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "abstract-red-black-priority-queue-mingwx64-1.1-sources.jar",
+          "url": "abstract-red-black-priority-queue-mingwx64-1.1-sources.jar",
+          "size": 2684,
+          "sha512": "9295885cf78a625a118399347e8c739de0f5deaea4d82acea690cdb1752a6a70bc344f72f0f098f68831bc09c8941f428390621abfb6a9d108048eb95f74452b",
+          "sha256": "31440029b58b89417ec68ea8046cc01e65c2b17e29ed7a645a62f0c57531ee91",
+          "sha1": "751f0b2471becf15e9b13040b4a9e491128e8aaa",
+          "md5": "4b55e277a7751ec73c43f5575edf8c14"
+        }
+      ]
+    }
+  ]
+}

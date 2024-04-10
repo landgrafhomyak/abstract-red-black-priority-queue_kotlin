@@ -1,0 +1,78 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../abstract-red-black-priority-queue/1.1/abstract-red-black-priority-queue-1.1.module",
+    "group": "ru.landgrafhomyak.collections",
+    "module": "abstract-red-black-priority-queue",
+    "version": "1.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.7"
+    }
+  },
+  "variants": [
+    {
+      "name": "androidNativeArm32ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "android_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-tree",
+          "version": {
+            "requires": "1.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "abstract-red-black-priority-queue.klib",
+          "url": "abstract-red-black-priority-queue-androidnativearm32-1.1.klib",
+          "size": 15006,
+          "sha512": "07446f8283cf2ada0ac1dbc151fc4db0a15da376b9eb3d3c081474e18a6bcdb81121bef72f206ba66f0c1c6f587fb7c0e36e0093bc470c8e6953d3bb1bdc583a",
+          "sha256": "0c73af7751053940fa16e7798139fe3dbc94b1c9e623130499bf3d5a623936a1",
+          "sha1": "12381bb0d28b39cf3aa45ff9f60f6e57bacfa6ae",
+          "md5": "88645ee186464520dd01777152c671ee"
+        }
+      ]
+    },
+    {
+      "name": "androidNativeArm32SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "android_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "abstract-red-black-priority-queue-androidnativearm32-1.1-sources.jar",
+          "url": "abstract-red-black-priority-queue-androidnativearm32-1.1-sources.jar",
+          "size": 2684,
+          "sha512": "9295885cf78a625a118399347e8c739de0f5deaea4d82acea690cdb1752a6a70bc344f72f0f098f68831bc09c8941f428390621abfb6a9d108048eb95f74452b",
+          "sha256": "31440029b58b89417ec68ea8046cc01e65c2b17e29ed7a645a62f0c57531ee91",
+          "sha1": "751f0b2471becf15e9b13040b4a9e491128e8aaa",
+          "md5": "4b55e277a7751ec73c43f5575edf8c14"
+        }
+      ]
+    }
+  ]
+}
